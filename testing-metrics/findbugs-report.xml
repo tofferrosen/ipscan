@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.3" sequence="1" timestamp="1396803033768" analysisTimestamp="1396803025502" release="">
+  <Project projectName="ipscan">
+    <Jar>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/bin</Jar>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib/jna-win64.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib/picocontainer-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib/swt-linux64.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/ext/launch4j</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/ext/launch4j/launch4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/ext/launch4j/xstream.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/ext/proguard/proguard.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib/testing/asm-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib/testing/asm-tree-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib/testing/cobertura.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib/testing/jakarta-oro-2.0.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib/testing/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib/testing/log4j-1.2.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib/testing/mockito-all.jar</AuxClasspathEntry>
+    <SrcDir>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/test</SrcDir>
+    <SrcDir>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/config</SrcDir>
+    <SrcDir>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/lib</SrcDir>
+    <SrcDir>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/src-platform</SrcDir>
+    <SrcDir>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/src</SrcDir>
+    <SrcDir>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/ext</SrcDir>
+    <SrcDir>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/resources</SrcDir>
+    <SrcDir>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/org</SrcDir>
+    <SrcDir>/home/parallels/RIT-Classes/Testing/testing-project/ipscan/test-coverage</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_EXIT" priority="2" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.config.CommandLineProcessor">
+      <SourceLine classname="net.azib.ipscan.config.CommandLineProcessor" sourcefile="CommandLineProcessor.java" sourcepath="net/azib/ipscan/config/CommandLineProcessor.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.config.CommandLineProcessor" name="transitionTo" signature="(Lnet/azib/ipscan/core/state/ScanningState;Lnet/azib/ipscan/core/state/StateMachine$Transition;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.config.CommandLineProcessor" start="153" end="172" startBytecode="0" endBytecode="273" sourcefile="CommandLineProcessor.java" sourcepath="net/azib/ipscan/config/CommandLineProcessor.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.config.CommandLineProcessor" start="169" end="169" startBytecode="140" endBytecode="140" sourcefile="CommandLineProcessor.java" sourcepath="net/azib/ipscan/config/CommandLineProcessor.java"/>
+    <SourceLine classname="net.azib.ipscan.config.CommandLineProcessor" start="169" end="169" startBytecode="140" endBytecode="140" sourcefile="CommandLineProcessor.java" sourcepath="net/azib/ipscan/config/CommandLineProcessor.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.config.ConfigDetector">
+      <SourceLine classname="net.azib.ipscan.config.ConfigDetector" sourcefile="ConfigDetector.java" sourcepath="net/azib/ipscan/config/ConfigDetector.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.config.ConfigDetector" name="detectMaxThreads" signature="(Ljava/net/InetSocketAddress;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.config.ConfigDetector" start="46" end="60" startBytecode="0" endBytecode="241" sourcefile="ConfigDetector.java" sourcepath="net/azib/ipscan/config/ConfigDetector.java"/>
+    </Method>
+    <Field classname="net.azib.ipscan.config.ConfigDetector" name="logger" signature="Ljava/util/logging/Logger;" isStatic="true">
+      <SourceLine classname="net.azib.ipscan.config.ConfigDetector" sourcefile="ConfigDetector.java" sourcepath="net/azib/ipscan/config/ConfigDetector.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.config.ConfigDetector" start="46" end="46" startBytecode="3" endBytecode="3" sourcefile="ConfigDetector.java" sourcepath="net/azib/ipscan/config/ConfigDetector.java"/>
+    <SourceLine classname="net.azib.ipscan.config.ConfigDetector" start="46" end="46" startBytecode="3" endBytecode="3" sourcefile="ConfigDetector.java" sourcepath="net/azib/ipscan/config/ConfigDetector.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="net.azib.ipscan.config.ConfigDetector$SocketThread">
+      <SourceLine classname="net.azib.ipscan.config.ConfigDetector$SocketThread" sourcefile="ConfigDetector.java" sourcepath="net/azib/ipscan/config/ConfigDetector.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.config.ConfigDetector$SocketThread" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.config.ConfigDetector$SocketThread" start="102" end="138" startBytecode="0" endBytecode="640" sourcefile="ConfigDetector.java" sourcepath="net/azib/ipscan/config/ConfigDetector.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.config.ConfigDetector$SocketThread" start="115" end="115" startBytecode="129" endBytecode="129" sourcefile="ConfigDetector.java" sourcepath="net/azib/ipscan/config/ConfigDetector.java"/>
+    <SourceLine classname="net.azib.ipscan.config.ConfigDetector$SocketThread" start="115" end="115" startBytecode="129" endBytecode="129" sourcefile="ConfigDetector.java" sourcepath="net/azib/ipscan/config/ConfigDetector.java"/>
+  </BugInstance>
+  <BugInstance type="LI_LAZY_INIT_UPDATE_STATIC" priority="2" abbrev="LI" category="MT_CORRECTNESS" first="1">
+    <Class classname="net.azib.ipscan.config.Labels">
+      <SourceLine classname="net.azib.ipscan.config.Labels" sourcefile="Labels.java" sourcepath="net/azib/ipscan/config/Labels.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.config.Labels" name="initialize" signature="(Ljava/util/Locale;)V" isStatic="true">
+      <SourceLine classname="net.azib.ipscan.config.Labels" start="54" end="83" startBytecode="0" endBytecode="87" sourcefile="Labels.java" sourcepath="net/azib/ipscan/config/Labels.java"/>
+    </Method>
+    <Field classname="net.azib.ipscan.config.Labels" name="instance" signature="Lnet/azib/ipscan/config/Labels;" isStatic="true" role="FIELD_ON">
+      <SourceLine classname="net.azib.ipscan.config.Labels" sourcefile="Labels.java" sourcepath="net/azib/ipscan/config/Labels.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.config.Labels" start="54" end="59" startBytecode="0" endBytecode="27" sourcefile="Labels.java" sourcepath="net/azib/ipscan/config/Labels.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" abbrev="REC" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.config.Labels">
+      <SourceLine classname="net.azib.ipscan.config.Labels" sourcefile="Labels.java" sourcepath="net/azib/ipscan/config/Labels.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.config.Labels" name="initialize" signature="(Ljava/util/Locale;)V" isStatic="true">
+      <SourceLine classname="net.azib.ipscan.config.Labels" start="54" end="83" startBytecode="0" endBytecode="378" sourcefile="Labels.java" sourcepath="net/azib/ipscan/config/Labels.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.config.Labels" start="80" end="80" startBytecode="184" endBytecode="184" sourcefile="Labels.java" sourcepath="net/azib/ipscan/config/Labels.java"/>
+    <SourceLine classname="net.azib.ipscan.config.Labels" start="80" end="80" startBytecode="184" endBytecode="184" sourcefile="Labels.java" sourcepath="net/azib/ipscan/config/Labels.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.config.LabelsTest">
+      <SourceLine classname="net.azib.ipscan.config.LabelsTest" sourcefile="LabelsTest.java" sourcepath="net/azib/ipscan/config/LabelsTest.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.config.LabelsTest" name="findAndTestLabels" signature="(Ljava/io/File;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.config.LabelsTest" start="108" end="146" startBytecode="0" endBytecode="577" sourcefile="LabelsTest.java" sourcepath="net/azib/ipscan/config/LabelsTest.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.config.LabelsTest" start="111" end="111" startBytecode="21" endBytecode="21" sourcefile="LabelsTest.java" sourcepath="net/azib/ipscan/config/LabelsTest.java"/>
+    <SourceLine classname="net.azib.ipscan.config.LabelsTest" start="111" end="111" startBytecode="21" endBytecode="21" sourcefile="LabelsTest.java" sourcepath="net/azib/ipscan/config/LabelsTest.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.config.Version">
+      <SourceLine classname="net.azib.ipscan.config.Version" sourcefile="Version.java" sourcepath="net/azib/ipscan/config/Version.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.config.Version" name="loadVersionFromJar" signature="()V" isStatic="true">
+      <SourceLine classname="net.azib.ipscan.config.Version" start="63" end="79" startBytecode="0" endBytecode="60" sourcefile="Version.java" sourcepath="net/azib/ipscan/config/Version.java"/>
+    </Method>
+    <Type descriptor="Ljava/util/zip/ZipFile;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.util.zip.ZipFile" start="46" end="453" sourcefile="ZipFile.java" sourcepath="java/util/zip/ZipFile.java"/>
+    </Type>
+    <SourceLine classname="net.azib.ipscan.config.Version" start="67" end="67" startBytecode="63" endBytecode="63" sourcefile="Version.java" sourcepath="net/azib/ipscan/config/Version.java"/>
+    <SourceLine classname="net.azib.ipscan.config.Version" start="67" end="67" startBytecode="63" endBytecode="63" sourcefile="Version.java" sourcepath="net/azib/ipscan/config/Version.java"/>
+  </BugInstance>
+  <BugInstance type="DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED" priority="2" abbrev="DP" category="MALICIOUS_CODE" first="1">
+    <Class classname="net.azib.ipscan.core.PluginLoader">
+      <SourceLine classname="net.azib.ipscan.core.PluginLoader" sourcefile="PluginLoader.java" sourcepath="net/azib/ipscan/core/PluginLoader.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.core.PluginLoader" name="loadPluginJars" signature="(Lorg/picocontainer/MutablePicoContainer;Ljava/io/File;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.PluginLoader" start="64" end="97" startBytecode="0" endBytecode="595" sourcefile="PluginLoader.java" sourcepath="net/azib/ipscan/core/PluginLoader.java"/>
+    </Method>
+    <Class classname="net.azib.ipscan.core.PluginLoader$PluginClassLoader">
+      <SourceLine classname="net.azib.ipscan.core.PluginLoader$PluginClassLoader" sourcefile="PluginLoader.java" sourcepath="net/azib/ipscan/core/PluginLoader.java"/>
+    </Class>
+    <SourceLine classname="net.azib.ipscan.core.PluginLoader" start="73" end="73" startBytecode="28" endBytecode="28" sourcefile="PluginLoader.java" sourcepath="net/azib/ipscan/core/PluginLoader.java"/>
+    <SourceLine classname="net.azib.ipscan.core.PluginLoader" start="73" end="73" startBytecode="28" endBytecode="28" sourcefile="PluginLoader.java" sourcepath="net/azib/ipscan/core/PluginLoader.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.core.PluginLoader">
+      <SourceLine classname="net.azib.ipscan.core.PluginLoader" sourcefile="PluginLoader.java" sourcepath="net/azib/ipscan/core/PluginLoader.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.core.PluginLoader" name="loadPluginJars" signature="(Lorg/picocontainer/MutablePicoContainer;Ljava/io/File;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.PluginLoader" start="64" end="97" startBytecode="0" endBytecode="96" sourcefile="PluginLoader.java" sourcepath="net/azib/ipscan/core/PluginLoader.java"/>
+    </Method>
+    <Type descriptor="Ljava/util/zip/ZipFile;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.util.zip.ZipFile" start="46" end="453" sourcefile="ZipFile.java" sourcepath="java/util/zip/ZipFile.java"/>
+    </Type>
+    <SourceLine classname="net.azib.ipscan.core.PluginLoader" start="76" end="76" startBytecode="57" endBytecode="57" sourcefile="PluginLoader.java" sourcepath="net/azib/ipscan/core/PluginLoader.java"/>
+    <SourceLine classname="net.azib.ipscan.core.PluginLoader" start="76" end="76" startBytecode="57" endBytecode="57" sourcefile="PluginLoader.java" sourcepath="net/azib/ipscan/core/PluginLoader.java"/>
+  </BugInstance>
+  <BugInstance type="IT_NO_SUCH_ELEMENT" priority="2" abbrev="It" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.core.PortIterator">
+      <SourceLine classname="net.azib.ipscan.core.PortIterator" sourcefile="PortIterator.java" sourcepath="net/azib/ipscan/core/PortIterator.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.core.PortIterator" name="next" signature="()Ljava/lang/Integer;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.PortIterator" start="69" end="77" startBytecode="0" endBytecode="185" sourcefile="PortIterator.java" sourcepath="net/azib/ipscan/core/PortIterator.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="RV_NEGATING_RESULT_OF_COMPARETO" priority="2" abbrev="RV" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.core.ScanningResultComparator">
+      <SourceLine classname="net.azib.ipscan.core.ScanningResultComparator" sourcefile="ScanningResultComparator.java" sourcepath="net/azib/ipscan/core/ScanningResultComparator.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.core.ScanningResultComparator" name="compare" signature="(Lnet/azib/ipscan/core/ScanningResult;Lnet/azib/ipscan/core/ScanningResult;)I" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.ScanningResultComparator" start="20" end="54" startBytecode="0" endBytecode="470" sourcefile="ScanningResultComparator.java" sourcepath="net/azib/ipscan/core/ScanningResultComparator.java"/>
+    </Method>
+    <Method classname="net.azib.ipscan.core.values.Empty" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="net.azib.ipscan.core.values.Empty" start="29" end="32" startBytecode="0" endBytecode="79" sourcefile="Empty.java" sourcepath="net/azib/ipscan/core/values/Empty.java"/>
+    </Method>
+    <Method classname="net.azib.ipscan.core.values.Empty" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="net.azib.ipscan.core.values.Empty" start="29" end="32" startBytecode="0" endBytecode="79" sourcefile="Empty.java" sourcepath="net/azib/ipscan/core/values/Empty.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultComparator" start="42" end="42" startBytecode="139" endBytecode="139" sourcefile="ScanningResultComparator.java" sourcepath="net/azib/ipscan/core/ScanningResultComparator.java"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultComparator" start="42" end="42" startBytecode="139" endBytecode="139" sourcefile="ScanningResultComparator.java" sourcepath="net/azib/ipscan/core/ScanningResultComparator.java"/>
+  </BugInstance>
+  <BugInstance type="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE" priority="2" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.core.ScanningResultComparator">
+      <SourceLine classname="net.azib.ipscan.core.ScanningResultComparator" start="1" end="63" sourcefile="ScanningResultComparator.java" sourcepath="net/azib/ipscan/core/ScanningResultComparator.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="net.azib.ipscan.core.ScanningResultList">
+      <SourceLine classname="net.azib.ipscan.core.ScanningResultList" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java"/>
+    </Class>
+    <Field classname="net.azib.ipscan.core.ScanningResultList" name="info" signature="Lnet/azib/ipscan/core/ScanningResultList$ScanInfo;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.ScanningResultList" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java"/>
+    </Field>
+    <Int value="61" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultList" start="178" end="178" startBytecode="1" endBytecode="1" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultList" start="80" end="80" startBytecode="1" endBytecode="1" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScannerDispatcherThreadTest" start="41" end="41" startBytecode="92" endBytecode="92" sourcefile="ScannerDispatcherThreadTest.java" sourcepath="net/azib/ipscan/core/ScannerDispatcherThreadTest.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultListTest" start="101" end="101" startBytecode="243" endBytecode="243" sourcefile="ScanningResultListTest.java" sourcepath="net/azib/ipscan/core/ScanningResultListTest.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultList$StopScanningListener" start="328" end="328" startBytecode="59" endBytecode="59" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultList$StopScanningListener" start="323" end="323" startBytecode="25" endBytecode="25" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultList$StopScanningListener" start="324" end="324" startBytecode="38" endBytecode="38" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultList" start="171" end="171" startBytecode="46" endBytecode="46" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultList" start="257" end="257" startBytecode="11" endBytecode="11" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultList" start="260" end="260" startBytecode="37" endBytecode="37" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultList" start="261" end="261" startBytecode="50" endBytecode="50" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="net.azib.ipscan.core.ScanningResultList" start="103" end="103" startBytecode="1" endBytecode="1" sourcefile="ScanningResultList.java" sourcepath="net/azib/ipscan/core/ScanningResultList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="NN_NAKED_NOTIFY" priority="2" abbrev="NN" category="MT_CORRECTNESS" first="1">
+    <Class classname="net.azib.ipscan.core.net.ICMPSharedPinger$PacketReceiverThread">
+      <SourceLine classname="net.azib.ipscan.core.net.ICMPSharedPinger$PacketReceiverThread" sourcefile="ICMPSharedPinger.java" sourcepath="net/azib/ipscan/core/net/ICMPSharedPinger.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.core.net.ICMPSharedPinger$PacketReceiverThread" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.ICMPSharedPinger$PacketReceiverThread" start="159" end="238" startBytecode="0" endBytecode="898" sourcefile="ICMPSharedPinger.java" sourcepath="net/azib/ipscan/core/net/ICMPSharedPinger.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.core.net.ICMPSharedPinger$PacketReceiverThread" start="212" end="212" startBytecode="289" endBytecode="289" sourcefile="ICMPSharedPinger.java" sourcepath="net/azib/ipscan/core/net/ICMPSharedPinger.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Class>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" name="data" signature="Lcom/sun/jna/Pointer;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" start="96" end="96" startBytecode="0" endBytecode="0" sourcefile="IcmpEchoReply.java" sourcepath="net/azib/ipscan/core/net/IcmpEchoReply.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Class>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" name="dataSize" signature="S" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" start="96" end="96" startBytecode="0" endBytecode="0" sourcefile="IcmpEchoReply.java" sourcepath="net/azib/ipscan/core/net/IcmpEchoReply.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Class>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" name="reserved" signature="S" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" start="96" end="96" startBytecode="0" endBytecode="0" sourcefile="IcmpEchoReply.java" sourcepath="net/azib/ipscan/core/net/IcmpEchoReply.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UwF" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Class>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" name="address" signature="Lnet/azib/ipscan/core/net/WinIpHlpDll$IpAddrByVal;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WindowsPinger" start="55" end="55" startBytecode="170" endBytecode="170" sourcefile="WindowsPinger.java" sourcepath="net/azib/ipscan/core/net/WindowsPinger.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UwF" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Class>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" name="options" signature="Lnet/azib/ipscan/core/net/WinIpHlpDll$IpOptionInformationByVal;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WindowsPinger" start="57" end="57" startBytecode="202" endBytecode="202" sourcefile="WindowsPinger.java" sourcepath="net/azib/ipscan/core/net/WindowsPinger.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Class>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" name="flags" signature="B" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" start="80" end="80" startBytecode="0" endBytecode="0" sourcefile="IpOptionInformation.java" sourcepath="net/azib/ipscan/core/net/IpOptionInformation.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Class>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" name="optionsData" signature="Lcom/sun/jna/Pointer;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" start="80" end="80" startBytecode="0" endBytecode="0" sourcefile="IpOptionInformation.java" sourcepath="net/azib/ipscan/core/net/IpOptionInformation.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Class>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" name="optionsSize" signature="B" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" start="80" end="80" startBytecode="0" endBytecode="0" sourcefile="IpOptionInformation.java" sourcepath="net/azib/ipscan/core/net/IpOptionInformation.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Class>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" name="tos" signature="B" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" start="80" end="80" startBytecode="0" endBytecode="0" sourcefile="IpOptionInformation.java" sourcepath="net/azib/ipscan/core/net/IpOptionInformation.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="NP" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WindowsPinger">
+      <SourceLine classname="net.azib.ipscan.core.net.WindowsPinger" sourcefile="WindowsPinger.java" sourcepath="net/azib/ipscan/core/net/WindowsPinger.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.core.net.WindowsPinger" name="ping" signature="(Lnet/azib/ipscan/core/ScanningSubject;I)Lnet/azib/ipscan/core/net/PingResult;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WindowsPinger" start="38" end="65" startBytecode="0" endBytecode="575" sourcefile="WindowsPinger.java" sourcepath="net/azib/ipscan/core/net/WindowsPinger.java"/>
+    </Method>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" name="address" signature="Lnet/azib/ipscan/core/net/WinIpHlpDll$IpAddrByVal;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WindowsPinger" start="55" end="55" startBytecode="173" endBytecode="173" sourcefile="WindowsPinger.java" sourcepath="net/azib/ipscan/core/net/WindowsPinger.java"/>
+    <SourceLine classname="net.azib.ipscan.core.net.WindowsPinger" start="55" end="55" startBytecode="173" endBytecode="173" sourcefile="WindowsPinger.java" sourcepath="net/azib/ipscan/core/net/WindowsPinger.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="NP" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.core.net.WindowsPinger">
+      <SourceLine classname="net.azib.ipscan.core.net.WindowsPinger" sourcefile="WindowsPinger.java" sourcepath="net/azib/ipscan/core/net/WindowsPinger.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.core.net.WindowsPinger" name="ping" signature="(Lnet/azib/ipscan/core/ScanningSubject;I)Lnet/azib/ipscan/core/net/PingResult;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WindowsPinger" start="38" end="65" startBytecode="0" endBytecode="575" sourcefile="WindowsPinger.java" sourcepath="net/azib/ipscan/core/net/WindowsPinger.java"/>
+    </Method>
+    <Field classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" name="options" signature="Lnet/azib/ipscan/core/net/WinIpHlpDll$IpOptionInformationByVal;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourcefile="WinIpHlpDll.java" sourcepath="net/azib/ipscan/core/net/WinIpHlpDll.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.core.net.WindowsPinger" start="57" end="57" startBytecode="205" endBytecode="205" sourcefile="WindowsPinger.java" sourcepath="net/azib/ipscan/core/net/WindowsPinger.java"/>
+    <SourceLine classname="net.azib.ipscan.core.net.WindowsPinger" start="57" end="57" startBytecode="205" endBytecode="205" sourcefile="WindowsPinger.java" sourcepath="net/azib/ipscan/core/net/WindowsPinger.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.core.values.NotAvailable">
+      <SourceLine classname="net.azib.ipscan.core.values.NotAvailable" sourcefile="NotAvailable.java" sourcepath="net/azib/ipscan/core/values/NotAvailable.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.core.values.NotAvailable" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.values.NotAvailable" start="29" end="31" startBytecode="0" endBytecode="86" sourcefile="NotAvailable.java" sourcepath="net/azib/ipscan/core/values/NotAvailable.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.core.values.NotScanned">
+      <SourceLine classname="net.azib.ipscan.core.values.NotScanned" sourcefile="NotScanned.java" sourcepath="net/azib/ipscan/core/values/NotScanned.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.core.values.NotScanned" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.values.NotScanned" start="29" end="31" startBytecode="0" endBytecode="85" sourcefile="NotScanned.java" sourcepath="net/azib/ipscan/core/values/NotScanned.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.core.values.NumericRangeList">
+      <SourceLine classname="net.azib.ipscan.core.values.NumericRangeList" sourcefile="NumericRangeList.java" sourcepath="net/azib/ipscan/core/values/NumericRangeList.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.core.values.NumericRangeList" name="compareTo" signature="(Lnet/azib/ipscan/core/values/NumericRangeList;)I" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.core.values.NumericRangeList" start="87" end="94" startBytecode="0" endBytecode="161" sourcefile="NumericRangeList.java" sourcepath="net/azib/ipscan/core/values/NumericRangeList.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.exporters.AbstractExporter">
+      <SourceLine classname="net.azib.ipscan.exporters.AbstractExporter" sourcefile="AbstractExporter.java" sourcepath="net/azib/ipscan/exporters/AbstractExporter.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.exporters.AbstractExporter" name="start" signature="(Ljava/io/OutputStream;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.exporters.AbstractExporter" start="36" end="37" startBytecode="0" endBytecode="85" sourcefile="AbstractExporter.java" sourcepath="net/azib/ipscan/exporters/AbstractExporter.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="121" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.exporters.AbstractExporter" start="36" end="36" startBytecode="10" endBytecode="10" sourcefile="AbstractExporter.java" sourcepath="net/azib/ipscan/exporters/AbstractExporter.java"/>
+    <SourceLine classname="net.azib.ipscan.exporters.AbstractExporter" start="36" end="36" startBytecode="10" endBytecode="10" sourcefile="AbstractExporter.java" sourcepath="net/azib/ipscan/exporters/AbstractExporter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.exporters.AbstractExporterTestCase">
+      <SourceLine classname="net.azib.ipscan.exporters.AbstractExporterTestCase" sourcefile="AbstractExporterTestCase.java" sourcepath="net/azib/ipscan/exporters/AbstractExporterTestCase.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.exporters.AbstractExporterTestCase" name="assertContains" signature="(Ljava/lang/String;Z)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.exporters.AbstractExporterTestCase" start="129" end="138" startBytecode="0" endBytecode="189" sourcefile="AbstractExporterTestCase.java" sourcepath="net/azib/ipscan/exporters/AbstractExporterTestCase.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="601" end="602" startBytecode="0" endBytecode="64" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.exporters.AbstractExporterTestCase" start="132" end="132" startBytecode="26" endBytecode="26" sourcefile="AbstractExporterTestCase.java" sourcepath="net/azib/ipscan/exporters/AbstractExporterTestCase.java"/>
+    <SourceLine classname="net.azib.ipscan.exporters.AbstractExporterTestCase" start="132" end="132" startBytecode="26" endBytecode="26" sourcefile="AbstractExporterTestCase.java" sourcepath="net/azib/ipscan/exporters/AbstractExporterTestCase.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="net.azib.ipscan.exporters.AbstractExporterTestCase">
+      <SourceLine classname="net.azib.ipscan.exporters.AbstractExporterTestCase" sourcefile="AbstractExporterTestCase.java" sourcepath="net/azib/ipscan/exporters/AbstractExporterTestCase.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.exporters.AbstractExporterTestCase" name="testBasic" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.exporters.AbstractExporterTestCase" start="79" end="91" startBytecode="0" endBytecode="265" sourcefile="AbstractExporterTestCase.java" sourcepath="net/azib/ipscan/exporters/AbstractExporterTestCase.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="618" end="620" startBytecode="0" endBytecode="69" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="597" end="601" startBytecode="0" endBytecode="98" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.exporters.AbstractExporterTestCase" start="81" end="81" startBytecode="73" endBytecode="73" sourcefile="AbstractExporterTestCase.java" sourcepath="net/azib/ipscan/exporters/AbstractExporterTestCase.java"/>
+    <SourceLine classname="net.azib.ipscan.exporters.AbstractExporterTestCase" start="81" end="81" startBytecode="73" endBytecode="73" sourcefile="AbstractExporterTestCase.java" sourcepath="net/azib/ipscan/exporters/AbstractExporterTestCase.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="net.azib.ipscan.exporters.CSVExporterTest">
+      <SourceLine classname="net.azib.ipscan.exporters.CSVExporterTest" sourcefile="CSVExporterTest.java" sourcepath="net/azib/ipscan/exporters/CSVExporterTest.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.exporters.CSVExporterTest" name="testCSVSafeString" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.exporters.CSVExporterTest" start="26" end="31" startBytecode="0" endBytecode="154" sourcefile="CSVExporterTest.java" sourcepath="net/azib/ipscan/exporters/CSVExporterTest.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="672" end="674" startBytecode="0" endBytecode="69" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="563" end="567" startBytecode="0" endBytecode="103" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.exporters.CSVExporterTest" start="30" end="30" startBytecode="83" endBytecode="83" sourcefile="CSVExporterTest.java" sourcepath="net/azib/ipscan/exporters/CSVExporterTest.java"/>
+    <SourceLine classname="net.azib.ipscan.exporters.CSVExporterTest" start="30" end="30" startBytecode="83" endBytecode="83" sourcefile="CSVExporterTest.java" sourcepath="net/azib/ipscan/exporters/CSVExporterTest.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.exporters.ExportProcessorTest">
+      <SourceLine classname="net.azib.ipscan.exporters.ExportProcessorTest" sourcefile="ExportProcessorTest.java" sourcepath="net/azib/ipscan/exporters/ExportProcessorTest.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.exporters.ExportProcessorTest" name="readFileContent" signature="(Ljava/io/File;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.exporters.ExportProcessorTest" start="93" end="100" startBytecode="0" endBytecode="191" sourcefile="ExportProcessorTest.java" sourcepath="net/azib/ipscan/exporters/ExportProcessorTest.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.exporters.ExportProcessorTest" start="94" end="94" startBytecode="17" endBytecode="17" sourcefile="ExportProcessorTest.java" sourcepath="net/azib/ipscan/exporters/ExportProcessorTest.java"/>
+    <SourceLine classname="net.azib.ipscan.exporters.ExportProcessorTest" start="94" end="94" startBytecode="17" endBytecode="17" sourcefile="ExportProcessorTest.java" sourcepath="net/azib/ipscan/exporters/ExportProcessorTest.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="net.azib.ipscan.exporters.TXTExporterTest">
+      <SourceLine classname="net.azib.ipscan.exporters.TXTExporterTest" sourcefile="TXTExporterTest.java" sourcepath="net/azib/ipscan/exporters/TXTExporterTest.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.exporters.TXTExporterTest" name="testPad" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.exporters.TXTExporterTest" start="27" end="32" startBytecode="0" endBytecode="158" sourcefile="TXTExporterTest.java" sourcepath="net/azib/ipscan/exporters/TXTExporterTest.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="618" end="620" startBytecode="0" endBytecode="69" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="597" end="601" startBytecode="0" endBytecode="98" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.exporters.TXTExporterTest" start="31" end="31" startBytecode="86" endBytecode="86" sourcefile="TXTExporterTest.java" sourcepath="net/azib/ipscan/exporters/TXTExporterTest.java"/>
+    <SourceLine classname="net.azib.ipscan.exporters.TXTExporterTest" start="31" end="31" startBytecode="86" endBytecode="86" sourcefile="TXTExporterTest.java" sourcepath="net/azib/ipscan/exporters/TXTExporterTest.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="net.azib.ipscan.exporters.XMLExporter">
+      <SourceLine classname="net.azib.ipscan.exporters.XMLExporter" sourcefile="XMLExporter.java" sourcepath="net/azib/ipscan/exporters/XMLExporter.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.exporters.XMLExporter" name="setFetchers" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.exporters.XMLExporter" start="79" end="81" startBytecode="0" endBytecode="75" sourcefile="XMLExporter.java" sourcepath="net/azib/ipscan/exporters/XMLExporter.java"/>
+    </Method>
+    <Field classname="net.azib.ipscan.exporters.XMLExporter" name="fetcherNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.exporters.XMLExporter" sourcefile="XMLExporter.java" sourcepath="net/azib/ipscan/exporters/XMLExporter.java"/>
+    </Field>
+    <LocalVariable name="fetcherNames" register="1" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="net.azib.ipscan.exporters.XMLExporter" start="80" end="80" startBytecode="12" endBytecode="12" sourcefile="XMLExporter.java" sourcepath="net/azib/ipscan/exporters/XMLExporter.java"/>
+    <SourceLine classname="net.azib.ipscan.exporters.XMLExporter" start="80" end="80" startBytecode="12" endBytecode="12" sourcefile="XMLExporter.java" sourcepath="net/azib/ipscan/exporters/XMLExporter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="net.azib.ipscan.exporters.XMLExporterTest">
+      <SourceLine classname="net.azib.ipscan.exporters.XMLExporterTest" sourcefile="XMLExporterTest.java" sourcepath="net/azib/ipscan/exporters/XMLExporterTest.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.exporters.XMLExporterTest" name="testValidXML" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.exporters.XMLExporterTest" start="87" end="96" startBytecode="0" endBytecode="247" sourcefile="XMLExporterTest.java" sourcepath="net/azib/ipscan/exporters/XMLExporterTest.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="618" end="620" startBytecode="0" endBytecode="69" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="597" end="601" startBytecode="0" endBytecode="98" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.exporters.XMLExporterTest" start="89" end="89" startBytecode="73" endBytecode="73" sourcefile="XMLExporterTest.java" sourcepath="net/azib/ipscan/exporters/XMLExporterTest.java"/>
+    <SourceLine classname="net.azib.ipscan.exporters.XMLExporterTest" start="89" end="89" startBytecode="73" endBytecode="73" sourcefile="XMLExporterTest.java" sourcepath="net/azib/ipscan/exporters/XMLExporterTest.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.feeders.FileFeeder">
+      <SourceLine classname="net.azib.ipscan.feeders.FileFeeder" sourcefile="FileFeeder.java" sourcepath="net/azib/ipscan/feeders/FileFeeder.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.feeders.FileFeeder" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.feeders.FileFeeder" start="52" end="59" startBytecode="0" endBytecode="141" sourcefile="FileFeeder.java" sourcepath="net/azib/ipscan/feeders/FileFeeder.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.feeders.FileFeeder" start="54" end="54" startBytecode="10" endBytecode="10" sourcefile="FileFeeder.java" sourcepath="net/azib/ipscan/feeders/FileFeeder.java"/>
+    <SourceLine classname="net.azib.ipscan.feeders.FileFeeder" start="54" end="54" startBytecode="10" endBytecode="10" sourcefile="FileFeeder.java" sourcepath="net/azib/ipscan/feeders/FileFeeder.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="net.azib.ipscan.feeders.FileFeeder">
+      <SourceLine classname="net.azib.ipscan.feeders.FileFeeder" sourcefile="FileFeeder.java" sourcepath="net/azib/ipscan/feeders/FileFeeder.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.feeders.FileFeeder" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.feeders.FileFeeder" start="52" end="59" startBytecode="0" endBytecode="141" sourcefile="FileFeeder.java" sourcepath="net/azib/ipscan/feeders/FileFeeder.java"/>
+    </Method>
+    <Class classname="java.io.Reader" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.Reader" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="net.azib.ipscan.feeders.FileFeeder" start="54" end="54" startBytecode="10" endBytecode="10" sourcefile="FileFeeder.java" sourcepath="net/azib/ipscan/feeders/FileFeeder.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="net.azib.ipscan.feeders.FileFeeder" start="59" end="59" startBytecode="30" endBytecode="30" sourcefile="FileFeeder.java" sourcepath="net/azib/ipscan/feeders/FileFeeder.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Reader x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.feeders.SmartTextFeeder">
+      <SourceLine classname="net.azib.ipscan.feeders.SmartTextFeeder" sourcefile="SmartTextFeeder.java" sourcepath="net/azib/ipscan/feeders/SmartTextFeeder.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.feeders.SmartTextFeeder" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.feeders.SmartTextFeeder" start="28" end="41" startBytecode="0" endBytecode="18" sourcefile="SmartTextFeeder.java" sourcepath="net/azib/ipscan/feeders/SmartTextFeeder.java"/>
+    </Method>
+    <LocalVariable name="text" register="1" pc="31" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="net.azib.ipscan.feeders.SmartTextFeeder" start="36" end="36" startBytecode="30" endBytecode="30" sourcefile="SmartTextFeeder.java" sourcepath="net/azib/ipscan/feeders/SmartTextFeeder.java"/>
+    <SourceLine classname="net.azib.ipscan.feeders.SmartTextFeeder" start="36" end="36" startBytecode="30" endBytecode="30" sourcefile="SmartTextFeeder.java" sourcepath="net/azib/ipscan/feeders/SmartTextFeeder.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="text"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs">
+      <SourceLine classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" sourcefile="FetcherRegistryTest.java" sourcepath="net/azib/ipscan/fetchers/FetcherRegistryTest.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" name="openFor" signature="(Lnet/azib/ipscan/fetchers/Fetcher;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" start="168" end="170" startBytecode="0" endBytecode="71" sourcefile="FetcherRegistryTest.java" sourcepath="net/azib/ipscan/fetchers/FetcherRegistryTest.java"/>
+    </Method>
+    <Field classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" name="calledForFetcher" signature="Lnet/azib/ipscan/fetchers/Fetcher;" isStatic="true">
+      <SourceLine classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" sourcefile="FetcherRegistryTest.java" sourcepath="net/azib/ipscan/fetchers/FetcherRegistryTest.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" start="169" end="169" startBytecode="8" endBytecode="8" sourcefile="FetcherRegistryTest.java" sourcepath="net/azib/ipscan/fetchers/FetcherRegistryTest.java"/>
+    <SourceLine classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" start="169" end="169" startBytecode="8" endBytecode="8" sourcefile="FetcherRegistryTest.java" sourcepath="net/azib/ipscan/fetchers/FetcherRegistryTest.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs">
+      <SourceLine classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" sourcefile="FetcherRegistryTest.java" sourcepath="net/azib/ipscan/fetchers/FetcherRegistryTest.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" name="openFor" signature="(Lnet/azib/ipscan/fetchers/Fetcher;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" start="168" end="170" startBytecode="0" endBytecode="71" sourcefile="FetcherRegistryTest.java" sourcepath="net/azib/ipscan/fetchers/FetcherRegistryTest.java"/>
+    </Method>
+    <Field classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" name="calledWithMessage" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" sourcefile="FetcherRegistryTest.java" sourcepath="net/azib/ipscan/fetchers/FetcherRegistryTest.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" start="168" end="168" startBytecode="4" endBytecode="4" sourcefile="FetcherRegistryTest.java" sourcepath="net/azib/ipscan/fetchers/FetcherRegistryTest.java"/>
+    <SourceLine classname="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" start="168" end="168" startBytecode="4" endBytecode="4" sourcefile="FetcherRegistryTest.java" sourcepath="net/azib/ipscan/fetchers/FetcherRegistryTest.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.fetchers.MACVendorFetcher">
+      <SourceLine classname="net.azib.ipscan.fetchers.MACVendorFetcher" sourcefile="MACVendorFetcher.java" sourcepath="net/azib/ipscan/fetchers/MACVendorFetcher.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.MACVendorFetcher" name="init" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.MACVendorFetcher" start="28" end="40" startBytecode="0" endBytecode="275" sourcefile="MACVendorFetcher.java" sourcepath="net/azib/ipscan/fetchers/MACVendorFetcher.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="121" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.fetchers.MACVendorFetcher" start="28" end="28" startBytecode="17" endBytecode="17" sourcefile="MACVendorFetcher.java" sourcepath="net/azib/ipscan/fetchers/MACVendorFetcher.java"/>
+    <SourceLine classname="net.azib.ipscan.fetchers.MACVendorFetcher" start="28" end="28" startBytecode="17" endBytecode="17" sourcefile="MACVendorFetcher.java" sourcepath="net/azib/ipscan/fetchers/MACVendorFetcher.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.fetchers.NetBIOSInfoFetcher">
+      <SourceLine classname="net.azib.ipscan.fetchers.NetBIOSInfoFetcher" sourcefile="NetBIOSInfoFetcher.java" sourcepath="net/azib/ipscan/fetchers/NetBIOSInfoFetcher.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.NetBIOSInfoFetcher" name="name" signature="([BI)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="net.azib.ipscan.fetchers.NetBIOSInfoFetcher" start="129" end="129" startBytecode="0" endBytecode="72" sourcefile="NetBIOSInfoFetcher.java" sourcepath="net/azib/ipscan/fetchers/NetBIOSInfoFetcher.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([BII)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="576" end="582" startBytecode="0" endBytecode="142" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.fetchers.NetBIOSInfoFetcher" start="129" end="129" startBytecode="14" endBytecode="14" sourcefile="NetBIOSInfoFetcher.java" sourcepath="net/azib/ipscan/fetchers/NetBIOSInfoFetcher.java"/>
+    <SourceLine classname="net.azib.ipscan.fetchers.NetBIOSInfoFetcher" start="129" end="129" startBytecode="14" endBytecode="14" sourcefile="NetBIOSInfoFetcher.java" sourcepath="net/azib/ipscan/fetchers/NetBIOSInfoFetcher.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.fetchers.PingFetcher">
+      <SourceLine classname="net.azib.ipscan.fetchers.PingFetcher" sourcefile="PingFetcher.java" sourcepath="net/azib/ipscan/fetchers/PingFetcher.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.PingFetcher" name="cleanup" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.PingFetcher" start="96" end="102" startBytecode="0" endBytecode="121" sourcefile="PingFetcher.java" sourcepath="net/azib/ipscan/fetchers/PingFetcher.java"/>
+    </Method>
+    <Field classname="net.azib.ipscan.fetchers.PingFetcher" name="pinger" signature="Lnet/azib/ipscan/core/net/Pinger;" isStatic="true">
+      <SourceLine classname="net.azib.ipscan.fetchers.PingFetcher" sourcefile="PingFetcher.java" sourcepath="net/azib/ipscan/fetchers/PingFetcher.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.fetchers.PingFetcher" start="101" end="101" startBytecode="28" endBytecode="28" sourcefile="PingFetcher.java" sourcepath="net/azib/ipscan/fetchers/PingFetcher.java"/>
+    <SourceLine classname="net.azib.ipscan.fetchers.PingFetcher" start="101" end="101" startBytecode="28" endBytecode="28" sourcefile="PingFetcher.java" sourcepath="net/azib/ipscan/fetchers/PingFetcher.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.fetchers.PortTextFetcher">
+      <SourceLine classname="net.azib.ipscan.fetchers.PortTextFetcher" sourcefile="PortTextFetcher.java" sourcepath="net/azib/ipscan/fetchers/PortTextFetcher.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.PortTextFetcher" name="scan" signature="(Lnet/azib/ipscan/core/ScanningSubject;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.PortTextFetcher" start="49" end="92" startBytecode="0" endBytecode="967" sourcefile="PortTextFetcher.java" sourcepath="net/azib/ipscan/fetchers/PortTextFetcher.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="121" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.fetchers.PortTextFetcher" start="61" end="61" startBytecode="122" endBytecode="122" sourcefile="PortTextFetcher.java" sourcepath="net/azib/ipscan/fetchers/PortTextFetcher.java"/>
+    <SourceLine classname="net.azib.ipscan.fetchers.PortTextFetcher" start="61" end="61" startBytecode="122" endBytecode="122" sourcefile="PortTextFetcher.java" sourcepath="net/azib/ipscan/fetchers/PortTextFetcher.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.fetchers.PortTextFetcher">
+      <SourceLine classname="net.azib.ipscan.fetchers.PortTextFetcher" sourcefile="PortTextFetcher.java" sourcepath="net/azib/ipscan/fetchers/PortTextFetcher.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.PortTextFetcher" name="scan" signature="(Lnet/azib/ipscan/core/ScanningSubject;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.PortTextFetcher" start="49" end="92" startBytecode="0" endBytecode="967" sourcefile="PortTextFetcher.java" sourcepath="net/azib/ipscan/fetchers/PortTextFetcher.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="994" end="994" startBytecode="0" endBytecode="57" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.fetchers.PortTextFetcher" start="59" end="59" startBytecode="104" endBytecode="104" sourcefile="PortTextFetcher.java" sourcepath="net/azib/ipscan/fetchers/PortTextFetcher.java"/>
+    <SourceLine classname="net.azib.ipscan.fetchers.PortTextFetcher" start="59" end="59" startBytecode="104" endBytecode="104" sourcefile="PortTextFetcher.java" sourcepath="net/azib/ipscan/fetchers/PortTextFetcher.java"/>
+  </BugInstance>
+  <BugInstance type="UW_UNCOND_WAIT" priority="2" abbrev="UW" category="MT_CORRECTNESS" first="1">
+    <Class classname="net.azib.ipscan.fetchers.PortsFetcherTest">
+      <SourceLine classname="net.azib.ipscan.fetchers.PortsFetcherTest" sourcefile="PortsFetcherTest.java" sourcepath="net/azib/ipscan/fetchers/PortsFetcherTest.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.PortsFetcherTest" name="scanWithResults" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.PortsFetcherTest" start="94" end="122" startBytecode="0" endBytecode="241" sourcefile="PortsFetcherTest.java" sourcepath="net/azib/ipscan/fetchers/PortsFetcherTest.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.fetchers.PortsFetcherTest" start="116" end="116" startBytecode="36" endBytecode="36" sourcefile="PortsFetcherTest.java" sourcepath="net/azib/ipscan/fetchers/PortsFetcherTest.java"/>
+  </BugInstance>
+  <BugInstance type="WA_NOT_IN_LOOP" priority="2" abbrev="Wa" category="MT_CORRECTNESS" first="1">
+    <Class classname="net.azib.ipscan.fetchers.PortsFetcherTest">
+      <SourceLine classname="net.azib.ipscan.fetchers.PortsFetcherTest" sourcefile="PortsFetcherTest.java" sourcepath="net/azib/ipscan/fetchers/PortsFetcherTest.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.PortsFetcherTest" name="scanWithResults" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.PortsFetcherTest" start="94" end="122" startBytecode="0" endBytecode="241" sourcefile="PortsFetcherTest.java" sourcepath="net/azib/ipscan/fetchers/PortsFetcherTest.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.fetchers.PortsFetcherTest" start="116" end="116" startBytecode="36" endBytecode="36" sourcefile="PortsFetcherTest.java" sourcepath="net/azib/ipscan/fetchers/PortsFetcherTest.java"/>
+  </BugInstance>
+  <BugInstance type="NN_NAKED_NOTIFY" priority="2" abbrev="NN" category="MT_CORRECTNESS" first="1">
+    <Class classname="net.azib.ipscan.fetchers.PortsFetcherTest$1">
+      <SourceLine classname="net.azib.ipscan.fetchers.PortsFetcherTest$1" sourcefile="PortsFetcherTest.java" sourcepath="net/azib/ipscan/fetchers/PortsFetcherTest.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.PortsFetcherTest$1" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.PortsFetcherTest$1" start="97" end="108" startBytecode="0" endBytecode="224" sourcefile="PortsFetcherTest.java" sourcepath="net/azib/ipscan/fetchers/PortsFetcherTest.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.fetchers.PortsFetcherTest$1" start="99" end="99" startBytecode="15" endBytecode="15" sourcefile="PortsFetcherTest.java" sourcepath="net/azib/ipscan/fetchers/PortsFetcherTest.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.fetchers.UnixMACFetcher">
+      <SourceLine classname="net.azib.ipscan.fetchers.UnixMACFetcher" sourcefile="UnixMACFetcher.java" sourcepath="net/azib/ipscan/fetchers/UnixMACFetcher.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.UnixMACFetcher" name="resolveMAC" signature="(Ljava/net/InetAddress;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.UnixMACFetcher" start="16" end="48" startBytecode="0" endBytecode="661" sourcefile="UnixMACFetcher.java" sourcepath="net/azib/ipscan/fetchers/UnixMACFetcher.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="121" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.fetchers.UnixMACFetcher" start="21" end="21" startBytecode="44" endBytecode="44" sourcefile="UnixMACFetcher.java" sourcepath="net/azib/ipscan/fetchers/UnixMACFetcher.java"/>
+    <SourceLine classname="net.azib.ipscan.fetchers.UnixMACFetcher" start="21" end="21" startBytecode="44" endBytecode="44" sourcefile="UnixMACFetcher.java" sourcepath="net/azib/ipscan/fetchers/UnixMACFetcher.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" abbrev="REC" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.fetchers.UnixMACFetcher">
+      <SourceLine classname="net.azib.ipscan.fetchers.UnixMACFetcher" sourcefile="UnixMACFetcher.java" sourcepath="net/azib/ipscan/fetchers/UnixMACFetcher.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.fetchers.UnixMACFetcher" name="resolveMAC" signature="(Ljava/net/InetAddress;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.fetchers.UnixMACFetcher" start="16" end="48" startBytecode="0" endBytecode="661" sourcefile="UnixMACFetcher.java" sourcepath="net/azib/ipscan/fetchers/UnixMACFetcher.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.fetchers.UnixMACFetcher" start="43" end="43" startBytecode="205" endBytecode="205" sourcefile="UnixMACFetcher.java" sourcepath="net/azib/ipscan/fetchers/UnixMACFetcher.java"/>
+    <SourceLine classname="net.azib.ipscan.fetchers.UnixMACFetcher" start="43" end="43" startBytecode="205" endBytecode="205" sourcefile="UnixMACFetcher.java" sourcepath="net/azib/ipscan/fetchers/UnixMACFetcher.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="2" abbrev="RCN" category="CORRECTNESS" first="1">
+    <Class classname="net.azib.ipscan.gui.AbstractModalDialog">
+      <SourceLine classname="net.azib.ipscan.gui.AbstractModalDialog" sourcefile="AbstractModalDialog.java" sourcepath="net/azib/ipscan/gui/AbstractModalDialog.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.gui.AbstractModalDialog" name="open" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.gui.AbstractModalDialog" start="35" end="59" startBytecode="0" endBytecode="316" sourcefile="AbstractModalDialog.java" sourcepath="net/azib/ipscan/gui/AbstractModalDialog.java"/>
+    </Method>
+    <Field classname="net.azib.ipscan.gui.AbstractModalDialog" name="shell" signature="Lorg/eclipse/swt/widgets/Shell;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="net.azib.ipscan.gui.AbstractModalDialog" sourcefile="AbstractModalDialog.java" sourcepath="net/azib/ipscan/gui/AbstractModalDialog.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.gui.AbstractModalDialog" start="40" end="40" startBytecode="25" endBytecode="25" sourcefile="AbstractModalDialog.java" sourcepath="net/azib/ipscan/gui/AbstractModalDialog.java"/>
+    <SourceLine classname="net.azib.ipscan.gui.AbstractModalDialog" start="53" end="53" startBytecode="125" endBytecode="125" sourcefile="AbstractModalDialog.java" sourcepath="net/azib/ipscan/gui/AbstractModalDialog.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+    <SourceLine classname="net.azib.ipscan.gui.AbstractModalDialog" start="53" end="53" startBytecode="125" endBytecode="125" sourcefile="AbstractModalDialog.java" sourcepath="net/azib/ipscan/gui/AbstractModalDialog.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="1" abbrev="DE" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.gui.GettingStartedDialog">
+      <SourceLine classname="net.azib.ipscan.gui.GettingStartedDialog" sourcefile="GettingStartedDialog.java" sourcepath="net/azib/ipscan/gui/GettingStartedDialog.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.gui.GettingStartedDialog" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.gui.GettingStartedDialog" start="26" end="34" startBytecode="0" endBytecode="160" sourcefile="GettingStartedDialog.java" sourcepath="net/azib/ipscan/gui/GettingStartedDialog.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="net.azib.ipscan.gui.GettingStartedDialog" start="33" end="33" startBytecode="52" endBytecode="52" sourcefile="GettingStartedDialog.java" sourcepath="net/azib/ipscan/gui/GettingStartedDialog.java"/>
+    <SourceLine classname="net.azib.ipscan.gui.GettingStartedDialog" start="33" end="33" startBytecode="52" endBytecode="52" sourcefile="GettingStartedDialog.java" sourcepath="net/azib/ipscan/gui/GettingStartedDialog.java"/>
+    <SourceLine classname="net.azib.ipscan.gui.GettingStartedDialog" start="33" end="33" startBytecode="52" endBytecode="52" sourcefile="GettingStartedDialog.java" sourcepath="net/azib/ipscan/gui/GettingStartedDialog.java"/>
+  </BugInstance>
+  <BugInstance type="RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN" priority="2" abbrev="RC" category="BAD_PRACTICE" first="1">
+    <Class classname="net.azib.ipscan.gui.MainMenu$MenuEnablerDisabler">
+      <SourceLine classname="net.azib.ipscan.gui.MainMenu$MenuEnablerDisabler" sourcefile="MainMenu.java" sourcepath="net/azib/ipscan/gui/MainMenu.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.gui.MainMenu$MenuEnablerDisabler" name="processMenu" signature="(Lorg/eclipse/swt/widgets/Menu;Z)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.gui.MainMenu$MenuEnablerDisabler" start="280" end="289" startBytecode="0" endBytecode="34" sourcefile="MainMenu.java" sourcepath="net/azib/ipscan/gui/MainMenu.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Boolean;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Boolean" start="43" end="262" sourcefile="Boolean.java" sourcepath="java/lang/Boolean.java"/>
+    </Type>
+    <Field classname="java.lang.Boolean" name="TRUE" signature="Ljava/lang/Boolean;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="java.lang.Boolean" sourcefile="Boolean.java" sourcepath="java/lang/Boolean.java"/>
+    </Field>
+    <SourceLine classname="net.azib.ipscan.gui.MainMenu$MenuEnablerDisabler" start="281" end="281" startBytecode="31" endBytecode="31" sourcefile="MainMenu.java" sourcepath="net/azib/ipscan/gui/MainMenu.java"/>
+    <SourceLine classname="net.azib.ipscan.gui.MainMenu$MenuEnablerDisabler" start="281" end="281" startBytecode="31" endBytecode="31" sourcefile="MainMenu.java" sourcepath="net/azib/ipscan/gui/MainMenu.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" abbrev="SF" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.gui.StatusBar$DisplayModeChangeListener">
+      <SourceLine classname="net.azib.ipscan.gui.StatusBar$DisplayModeChangeListener" sourcefile="StatusBar.java" sourcepath="net/azib/ipscan/gui/StatusBar.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.gui.StatusBar$DisplayModeChangeListener" name="handleEvent" signature="(Lorg/eclipse/swt/widgets/Event;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.gui.StatusBar$DisplayModeChangeListener" start="142" end="171" startBytecode="0" endBytecode="503" sourcefile="StatusBar.java" sourcepath="net/azib/ipscan/gui/StatusBar.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.gui.StatusBar$DisplayModeChangeListener" start="158" end="166" startBytecode="183" endBytecode="292" sourcefile="StatusBar.java" sourcepath="net/azib/ipscan/gui/StatusBar.java"/>
+    <SourceLine classname="net.azib.ipscan.gui.StatusBar$DisplayModeChangeListener" start="158" end="166" startBytecode="183" endBytecode="292" sourcefile="StatusBar.java" sourcepath="net/azib/ipscan/gui/StatusBar.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="net.azib.ipscan.gui.actions.CommandsMenuActions$ShowOpenersMenu">
+      <SourceLine classname="net.azib.ipscan.gui.actions.CommandsMenuActions$ShowOpenersMenu" sourcefile="CommandsMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/CommandsMenuActions.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.gui.actions.CommandsMenuActions$ShowOpenersMenu" name="handleEvent" signature="(Lorg/eclipse/swt/widgets/Event;)V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.gui.actions.CommandsMenuActions$ShowOpenersMenu" start="163" end="185" startBytecode="0" endBytecode="440" sourcefile="CommandsMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/CommandsMenuActions.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="618" end="620" startBytecode="0" endBytecode="69" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="597" end="601" startBytecode="0" endBytecode="98" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.gui.actions.CommandsMenuActions$ShowOpenersMenu" start="181" end="181" startBytecode="141" endBytecode="141" sourcefile="CommandsMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/CommandsMenuActions.java"/>
+    <SourceLine classname="net.azib.ipscan.gui.actions.CommandsMenuActions$ShowOpenersMenu" start="181" end="181" startBytecode="141" endBytecode="141" sourcefile="CommandsMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/CommandsMenuActions.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1">
+      <SourceLine classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" sourcefile="HelpMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/HelpMenuActions.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" start="104" end="152" startBytecode="0" endBytecode="748" sourcefile="HelpMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/HelpMenuActions.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="121" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" start="110" end="110" startBytecode="38" endBytecode="38" sourcefile="HelpMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/HelpMenuActions.java"/>
+    <SourceLine classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" start="110" end="110" startBytecode="38" endBytecode="38" sourcefile="HelpMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/HelpMenuActions.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" abbrev="NP" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1">
+      <SourceLine classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" sourcefile="HelpMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/HelpMenuActions.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" start="104" end="152" startBytecode="0" endBytecode="748" sourcefile="HelpMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/HelpMenuActions.java"/>
+    </Method>
+    <LocalVariable name="latestVersion" register="6" pc="55" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" start="113" end="113" startBytecode="57" endBytecode="57" sourcefile="HelpMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/HelpMenuActions.java"/>
+    <SourceLine classname="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" start="113" end="113" startBytecode="57" endBytecode="57" sourcefile="HelpMenuActions.java" sourcepath="net/azib/ipscan/gui/actions/HelpMenuActions.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="net.azib.ipscan.gui.actions.TerminalLauncher">
+      <SourceLine classname="net.azib.ipscan.gui.actions.TerminalLauncher" sourcefile="TerminalLauncher.java" sourcepath="net/azib/ipscan/gui/actions/TerminalLauncher.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.gui.actions.TerminalLauncher" name="launchInTerminal" signature="(Ljava/lang/String;Ljava/io/File;)V" isStatic="true">
+      <SourceLine classname="net.azib.ipscan.gui.actions.TerminalLauncher" start="44" end="95" startBytecode="0" endBytecode="667" sourcefile="TerminalLauncher.java" sourcepath="net/azib/ipscan/gui/actions/TerminalLauncher.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="68" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.gui.actions.TerminalLauncher" start="48" end="48" startBytecode="23" endBytecode="23" sourcefile="TerminalLauncher.java" sourcepath="net/azib/ipscan/gui/actions/TerminalLauncher.java"/>
+    <SourceLine classname="net.azib.ipscan.gui.actions.TerminalLauncher" start="48" end="48" startBytecode="23" endBytecode="23" sourcefile="TerminalLauncher.java" sourcepath="net/azib/ipscan/gui/actions/TerminalLauncher.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" abbrev="REC" category="STYLE" first="1">
+    <Class classname="net.azib.ipscan.gui.actions.TerminalLauncher">
+      <SourceLine classname="net.azib.ipscan.gui.actions.TerminalLauncher" sourcefile="TerminalLauncher.java" sourcepath="net/azib/ipscan/gui/actions/TerminalLauncher.java"/>
+    </Class>
+    <Method classname="net.azib.ipscan.gui.actions.TerminalLauncher" name="launchInTerminal" signature="(Ljava/lang/String;Ljava/io/File;)V" isStatic="true">
+      <SourceLine classname="net.azib.ipscan.gui.actions.TerminalLauncher" start="44" end="95" startBytecode="0" endBytecode="667" sourcefile="TerminalLauncher.java" sourcepath="net/azib/ipscan/gui/actions/TerminalLauncher.java"/>
+    </Method>
+    <SourceLine classname="net.azib.ipscan.gui.actions.TerminalLauncher" start="81" end="81" startBytecode="396" endBytecode="396" sourcefile="TerminalLauncher.java" sourcepath="net/azib/ipscan/gui/actions/TerminalLauncher.java"/>
+    <SourceLine classname="net.azib.ipscan.gui.actions.TerminalLauncher" start="81" end="81" startBytecode="396" endBytecode="396" sourcefile="TerminalLauncher.java" sourcepath="net/azib/ipscan/gui/actions/TerminalLauncher.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="org.savarese.vserv.tcpip.IPPacket">
+      <SourceLine classname="org.savarese.vserv.tcpip.IPPacket" sourcefile="IPPacket.java" sourcepath="org/savarese/vserv/tcpip/IPPacket.java"/>
+    </Class>
+    <Method classname="org.savarese.vserv.tcpip.IPPacket" name="setData" signature="([B)V" isStatic="false">
+      <SourceLine classname="org.savarese.vserv.tcpip.IPPacket" start="115" end="116" startBytecode="0" endBytecode="61" sourcefile="IPPacket.java" sourcepath="org/savarese/vserv/tcpip/IPPacket.java"/>
+    </Method>
+    <Field classname="org.savarese.vserv.tcpip.IPPacket" name="_data_" signature="[B" isStatic="false">
+      <SourceLine classname="org.savarese.vserv.tcpip.IPPacket" sourcefile="IPPacket.java" sourcepath="org/savarese/vserv/tcpip/IPPacket.java"/>
+    </Field>
+    <LocalVariable name="data" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.savarese.vserv.tcpip.IPPacket" start="115" end="115" startBytecode="2" endBytecode="2" sourcefile="IPPacket.java" sourcepath="org/savarese/vserv/tcpip/IPPacket.java"/>
+    <SourceLine classname="org.savarese.vserv.tcpip.IPPacket" start="115" end="115" startBytecode="2" endBytecode="2" sourcefile="IPPacket.java" sourcepath="org/savarese/vserv/tcpip/IPPacket.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 6 Apr 2014 10:47:40 -0500" total_classes="373" referenced_classes="753" total_bugs="61" total_size="10598" num_packages="18" vm_version="20.0-b12" cpu_seconds="13.39" clock_seconds="40.26" peak_mbytes="394.29" alloc_mbytes="341.38" gc_seconds="1.56" priority_2="47" priority_1="14">
+    <PackageStats package="net.azib.ipscan" total_bugs="0" total_types="3" total_size="109">
+      <ClassStats class="net.azib.ipscan.Main" sourceFile="Main.java" interface="false" size="81" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.MainTest" sourceFile="MainTest.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.MainTest$1" sourceFile="MainTest.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.config" total_bugs="7" total_types="27" total_size="1034" priority_2="6" priority_1="1">
+      <ClassStats class="net.azib.ipscan.config.CommandLineProcessor" sourceFile="CommandLineProcessor.java" interface="false" size="100" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.config.CommandLineProcessorTest" sourceFile="CommandLineProcessorTest.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.CommandLineProcessorTest$MockFeederRegistry" sourceFile="CommandLineProcessorTest.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.CommandProcessor" sourceFile="CommandProcessor.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.CommentsConfig" sourceFile="CommentsConfig.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.ComponentRegistry" sourceFile="ComponentRegistry.java" interface="false" size="112" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.Config" sourceFile="Config.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.ConfigDetector" sourceFile="ConfigDetector.java" interface="false" size="50" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.config.ConfigDetector$DetectorCallback" sourceFile="ConfigDetector.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.ConfigDetector$SocketThread" sourceFile="ConfigDetector.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.config.ConfigTest" sourceFile="ConfigTest.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.FavoritesConfig" sourceFile="FavoritesConfig.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.GUIConfig" sourceFile="GUIConfig.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.GUIConfig$DisplayMethod" sourceFile="GUIConfig.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.GUIConfigTest" sourceFile="GUIConfigTest.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.Labels" sourceFile="Labels.java" interface="false" size="45" bugs="2" priority_2="2"/>
+      <ClassStats class="net.azib.ipscan.config.LabelsTest" sourceFile="LabelsTest.java" interface="false" size="73" bugs="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.config.LoggerFactory" sourceFile="LoggerFactory.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.LoggerFactoryTest" sourceFile="LoggerFactoryTest.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.NamedListConfig" sourceFile="NamedListConfig.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.NamedListConfigTest" sourceFile="NamedListConfigTest.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.OpenersConfig" sourceFile="OpenersConfig.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.OpenersConfig$Opener" sourceFile="OpenersConfig.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.OpenersConfigTest" sourceFile="OpenersConfigTest.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.Platform" sourceFile="Platform.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.ScannerConfig" sourceFile="ScannerConfig.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.config.Version" sourceFile="Version.java" interface="false" size="40" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.core" total_bugs="6" total_types="36" total_size="1202" priority_2="6">
+      <ClassStats class="net.azib.ipscan.core.LibraryLoader" sourceFile="LibraryLoader.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.Plugin" sourceFile="Plugin.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.PluginLoader" sourceFile="PluginLoader.java" interface="false" size="53" bugs="2" priority_2="2"/>
+      <ClassStats class="net.azib.ipscan.core.PluginLoader$1" sourceFile="PluginLoader.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.PluginLoader$PluginClassLoader" sourceFile="PluginLoader.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.PluginLoaderTest" sourceFile="PluginLoaderTest.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.PluginLoaderTest$DummyFetcher" sourceFile="PluginLoaderTest.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.PortIterator" sourceFile="PortIterator.java" interface="false" size="52" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.core.PortIteratorTest" sourceFile="PortIteratorTest.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.Scanner" sourceFile="Scanner.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerDispatcherThread" sourceFile="ScannerDispatcherThread.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerDispatcherThread$1" sourceFile="ScannerDispatcherThread.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerDispatcherThread$AddressScannerTask" sourceFile="ScannerDispatcherThread.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerDispatcherThreadFactory" sourceFile="ScannerDispatcherThreadFactory.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerDispatcherThreadTest" sourceFile="ScannerDispatcherThreadTest.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerTest" sourceFile="ScannerTest.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerTest$AddressAbortingFetcher" sourceFile="ScannerTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerTest$AnotherFakeFetcher" sourceFile="ScannerTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerTest$FailingFetcher" sourceFile="ScannerTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerTest$FakeFetcher" sourceFile="ScannerTest.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerTest$InterruptedFetcher" sourceFile="ScannerTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScannerTest$PlainValueFetcher" sourceFile="ScannerTest.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningProgressCallback" sourceFile="ScanningProgressCallback.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningResult" sourceFile="ScanningResult.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningResult$ResultType" sourceFile="ScanningResult.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningResultCallback" sourceFile="ScanningResultCallback.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningResultComparator" sourceFile="ScanningResultComparator.java" interface="false" size="31" bugs="2" priority_2="2"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningResultComparatorTest" sourceFile="ScanningResultComparatorTest.java" interface="false" size="88" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningResultList" sourceFile="ScanningResultList.java" interface="false" size="100" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningResultList$ScanInfo" sourceFile="ScanningResultList.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningResultList$StopScanningListener" sourceFile="ScanningResultList.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningResultListTest" sourceFile="ScanningResultListTest.java" interface="false" size="241" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningResultListTest$1" sourceFile="ScanningResultListTest.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningSubject" sourceFile="ScanningSubject.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.ScanningSubjectTest" sourceFile="ScanningSubjectTest.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.UserErrorException" sourceFile="UserErrorException.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.core.net" total_bugs="12" total_types="23" total_size="548" priority_2="12">
+      <ClassStats class="net.azib.ipscan.core.net.CombinedUnprivilegedPinger" sourceFile="CombinedUnprivilegedPinger.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.ICMPPinger" sourceFile="ICMPPinger.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.ICMPSharedPinger" sourceFile="ICMPSharedPinger.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.ICMPSharedPinger$PacketReceiverThread" sourceFile="ICMPSharedPinger.java" interface="false" size="50" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.core.net.ICMPSharedPingerTest" sourceFile="ICMPSharedPingerTest.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.PingResult" sourceFile="PingResult.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.Pinger" sourceFile="Pinger.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.PingerRegistry" sourceFile="PingerRegistry.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.PingerRegistryTest" sourceFile="PingerRegistryTest.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.PingerRegistryTest$DummyPinger1" sourceFile="PingerRegistryTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.PingerRegistryTest$DummyPinger2" sourceFile="PingerRegistryTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.TCPPinger" sourceFile="TCPPinger.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.UDPPinger" sourceFile="UDPPinger.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.WinIpHlpDll" sourceFile="WinIpHlpDll.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.WinIpHlpDll$AutoOrderedStructure" sourceFile="WinIpHlpDll.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.WinIpHlpDll$IcmpEchoReply" sourceFile="WinIpHlpDll.java" interface="false" size="16" bugs="3" priority_2="3"/>
+      <ClassStats class="net.azib.ipscan.core.net.WinIpHlpDll$IpAddr" sourceFile="WinIpHlpDll.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.WinIpHlpDll$IpAddrByVal" sourceFile="WinIpHlpDll.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformation" sourceFile="WinIpHlpDll.java" interface="false" size="8" bugs="4" priority_2="4"/>
+      <ClassStats class="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformationByRef" sourceFile="WinIpHlpDll.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.WinIpHlpDll$IpOptionInformationByVal" sourceFile="WinIpHlpDll.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.WinIpHlpDll$Loader" sourceFile="WinIpHlpDll.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.net.WindowsPinger" sourceFile="WindowsPinger.java" interface="false" size="34" bugs="4" priority_2="4"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.core.state" total_bugs="0" total_types="10" total_size="246">
+      <ClassStats class="net.azib.ipscan.core.state.ScanningState" sourceFile="ScanningState.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.state.ScanningStateTest" sourceFile="ScanningStateTest.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.state.StateMachine" sourceFile="StateMachine.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.state.StateMachine$Transition" sourceFile="StateMachine.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.state.StateMachineTest" sourceFile="StateMachineTest.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.state.StateMachineTest$1" sourceFile="StateMachineTest.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.state.StateMachineTest$2" sourceFile="StateMachineTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.state.StateMachineTest$3" sourceFile="StateMachineTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.state.StateMachineTest$4" sourceFile="StateMachineTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.state.StateTransitionListener" sourceFile="StateTransitionListener.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.core.values" total_bugs="3" total_types="11" total_size="268" priority_2="3">
+      <ClassStats class="net.azib.ipscan.core.values.Empty" sourceFile="Empty.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.values.InetAddressHolder" sourceFile="InetAddressHolder.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.values.InetAddressHolderTest" sourceFile="InetAddressHolderTest.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.values.IntegerWithUnit" sourceFile="IntegerWithUnit.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.values.IntegerWithUnitTest" sourceFile="IntegerWithUnitTest.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.values.NotAvailable" sourceFile="NotAvailable.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.core.values.NotAvailableTest" sourceFile="NotAvailableTest.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.values.NotScanned" sourceFile="NotScanned.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.core.values.NotScannedTest" sourceFile="NotScannedTest.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.core.values.NumericRangeList" sourceFile="NumericRangeList.java" interface="false" size="43" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.core.values.NumericRangeListTest" sourceFile="NumericRangeListTest.java" interface="false" size="21" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.exporters" total_bugs="8" total_types="20" total_size="599" priority_2="5" priority_1="3">
+      <ClassStats class="net.azib.ipscan.exporters.AbstractExporter" sourceFile="AbstractExporter.java" interface="false" size="23" bugs="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.exporters.AbstractExporterTestCase" sourceFile="AbstractExporterTestCase.java" interface="false" size="82" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.exporters.AbstractExporterTestCase$1" sourceFile="AbstractExporterTestCase.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.CSVExporter" sourceFile="CSVExporter.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.CSVExporterTest" sourceFile="CSVExporterTest.java" interface="false" size="27" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.exporters.ExportProcessor" sourceFile="ExportProcessor.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.ExportProcessor$ScanningResultFilter" sourceFile="ExportProcessor.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.ExportProcessorTest" sourceFile="ExportProcessorTest.java" interface="false" size="49" bugs="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.exporters.ExportProcessorTest$1" sourceFile="ExportProcessorTest.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.Exporter" sourceFile="Exporter.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.ExporterException" sourceFile="ExporterException.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.ExporterRegistry" sourceFile="ExporterRegistry.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.ExporterRegistryTest" sourceFile="ExporterRegistryTest.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.IPListExporter" sourceFile="IPListExporter.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.IPListExporterTest" sourceFile="IPListExporterTest.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.SQLExporter" sourceFile="SQLExporter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.TXTExporter" sourceFile="TXTExporter.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.exporters.TXTExporterTest" sourceFile="TXTExporterTest.java" interface="false" size="38" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.exporters.XMLExporter" sourceFile="XMLExporter.java" interface="false" size="46" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.exporters.XMLExporterTest" sourceFile="XMLExporterTest.java" interface="false" size="52" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.feeders" total_bugs="3" total_types="15" total_size="500" priority_2="1" priority_1="2">
+      <ClassStats class="net.azib.ipscan.feeders.AbstractFeeder" sourceFile="AbstractFeeder.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.Feeder" sourceFile="Feeder.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.FeederCreator" sourceFile="FeederCreator.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.FeederException" sourceFile="FeederException.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.FeederRegistry" sourceFile="FeederRegistry.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.FeederTestUtils" sourceFile="FeederTestUtils.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.FileFeeder" sourceFile="FileFeeder.java" interface="false" size="62" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.feeders.FileFeederTest" sourceFile="FileFeederTest.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.RandomFeeder" sourceFile="RandomFeeder.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.RandomFeederTest" sourceFile="RandomFeederTest.java" interface="false" size="87" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.RangeFeeder" sourceFile="RangeFeeder.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.RangeFeederTest" sourceFile="RangeFeederTest.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.RescanFeeder" sourceFile="RescanFeeder.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.RescanFeederTest" sourceFile="RescanFeederTest.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.feeders.SmartTextFeeder" sourceFile="SmartTextFeeder.java" interface="false" size="18" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.fetchers" total_bugs="12" total_types="37" total_size="815" priority_2="7" priority_1="5">
+      <ClassStats class="net.azib.ipscan.fetchers.AbstractFetcher" sourceFile="AbstractFetcher.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.AbstractFetcherTestCase" sourceFile="AbstractFetcherTestCase.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.CommentFetcher" sourceFile="CommentFetcher.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.Fetcher" sourceFile="Fetcher.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.FetcherException" sourceFile="FetcherException.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.FetcherPrefs" sourceFile="FetcherPrefs.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.FetcherRegistry" sourceFile="FetcherRegistry.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.FetcherRegistryTest" sourceFile="FetcherRegistryTest.java" interface="false" size="86" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.FetcherRegistryTest$1" sourceFile="FetcherRegistryTest.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcher" sourceFile="FetcherRegistryTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.FetcherRegistryTest$EditableFetcherPrefs" sourceFile="FetcherRegistryTest.java" interface="false" size="17" bugs="2" priority_2="2"/>
+      <ClassStats class="net.azib.ipscan.fetchers.FetcherRegistryUpdateListener" sourceFile="FetcherRegistryUpdateListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.FilteredPortsFetcher" sourceFile="FilteredPortsFetcher.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.HTTPSenderFetcher" sourceFile="HTTPSenderFetcher.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.HostnameFetcher" sourceFile="HostnameFetcher.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.HostnameFetcherTest" sourceFile="HostnameFetcherTest.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.IPFetcher" sourceFile="IPFetcher.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.IPFetcherTest" sourceFile="IPFetcherTest.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.LastAliveTimeFetcher" sourceFile="LastAliveTimeFetcher.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.MACFetcher" sourceFile="MACFetcher.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.MACFetcherTest" sourceFile="MACFetcherTest.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.MACVendorFetcher" sourceFile="MACVendorFetcher.java" interface="false" size="29" bugs="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.fetchers.MACVendorFetcherTest" sourceFile="MACVendorFetcherTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.NetBIOSInfoFetcher" sourceFile="NetBIOSInfoFetcher.java" interface="false" size="74" bugs="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.fetchers.NetBIOSInfoFetcherTest" sourceFile="NetBIOSInfoFetcherTest.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.PacketLossFetcher" sourceFile="PacketLossFetcher.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.PingFetcher" sourceFile="PingFetcher.java" interface="false" size="43" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.fetchers.PingFetcherTest" sourceFile="PingFetcherTest.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.PingTTLFetcher" sourceFile="PingTTLFetcher.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.PingTTLFetcherTest" sourceFile="PingTTLFetcherTest.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.PortTextFetcher" sourceFile="PortTextFetcher.java" interface="false" size="60" bugs="2" priority_1="2"/>
+      <ClassStats class="net.azib.ipscan.fetchers.PortsFetcher" sourceFile="PortsFetcher.java" interface="false" size="74" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.PortsFetcherTest" sourceFile="PortsFetcherTest.java" interface="false" size="50" bugs="2" priority_2="2"/>
+      <ClassStats class="net.azib.ipscan.fetchers.PortsFetcherTest$1" sourceFile="PortsFetcherTest.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.fetchers.UnixMACFetcher" sourceFile="UnixMACFetcher.java" interface="false" size="28" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.fetchers.WebDetectFetcher" sourceFile="WebDetectFetcher.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.fetchers.WinMACFetcher" sourceFile="WinMACFetcher.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.gui" total_bugs="4" total_types="76" total_size="2236" priority_2="3" priority_1="1">
+      <ClassStats class="net.azib.ipscan.gui.AboutDialog" sourceFile="AboutDialog.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.AboutDialog$1" sourceFile="AboutDialog.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.AbstractModalDialog" sourceFile="AbstractModalDialog.java" interface="false" size="75" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.gui.AbstractModalDialog$1" sourceFile="AbstractModalDialog.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.AbstractModalDialog$DownButtonListener" sourceFile="AbstractModalDialog.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.AbstractModalDialog$UpButtonListener" sourceFile="AbstractModalDialog.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.ConfigDetectorDialog" sourceFile="ConfigDetectorDialog.java" interface="false" size="111" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.ConfigDetectorDialog$1" sourceFile="ConfigDetectorDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.ConfigDetectorDialog$2" sourceFile="ConfigDetectorDialog.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.ConfigDetectorDialog$3" sourceFile="ConfigDetectorDialog.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.ConfigDetectorDialog$4" sourceFile="ConfigDetectorDialog.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.ConfigDetectorDialog$StartButtonListener" sourceFile="ConfigDetectorDialog.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.ConfigDetectorDialog$StartButtonListener$1" sourceFile="ConfigDetectorDialog.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.DetailsWindow" sourceFile="DetailsWindow.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.DetailsWindow$CommentsTextListener" sourceFile="DetailsWindow.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.DetailsWindow$TraverseListener" sourceFile="DetailsWindow.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditFavoritesDialog" sourceFile="EditFavoritesDialog.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditFavoritesDialog$1" sourceFile="EditFavoritesDialog.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditFavoritesDialog$2" sourceFile="EditFavoritesDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditFavoritesDialog$DeleteListener" sourceFile="EditFavoritesDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditFavoritesDialog$RenameListener" sourceFile="EditFavoritesDialog.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditOpenersDialog" sourceFile="EditOpenersDialog.java" interface="false" size="131" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditOpenersDialog$1" sourceFile="EditOpenersDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditOpenersDialog$AddButtonListener" sourceFile="EditOpenersDialog.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditOpenersDialog$DeleteButtonListener" sourceFile="EditOpenersDialog.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditOpenersDialog$HintButtonListener" sourceFile="EditOpenersDialog.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditOpenersDialog$ItemSelectListener" sourceFile="EditOpenersDialog.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.EditOpenersDialog$OpenerNameChange" sourceFile="EditOpenersDialog.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.GettingStartedDialog" sourceFile="GettingStartedDialog.java" interface="false" size="50" bugs="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.gui.GettingStartedDialog$1" sourceFile="GettingStartedDialog.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.GettingStartedDialog$2" sourceFile="GettingStartedDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.InfoDialog" sourceFile="InfoDialog.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.InputDialog" sourceFile="InputDialog.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.InputDialog$1" sourceFile="InputDialog.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.InputDialog$2" sourceFile="InputDialog.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.InputDialogTest" sourceFile="InputDialogTest.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.InputDialogTest$1" sourceFile="InputDialogTest.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.InputDialogTest$2" sourceFile="InputDialogTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainMenu" sourceFile="MainMenu.java" interface="false" size="117" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainMenu$ColumnsMenu" sourceFile="MainMenu.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainMenu$CommandsMenu" sourceFile="MainMenu.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainMenu$FavoritesMenu" sourceFile="MainMenu.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainMenu$MenuEnablerDisabler" sourceFile="MainMenu.java" interface="false" size="18" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.gui.MainMenu$OpenersMenu" sourceFile="MainMenu.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainWindow" sourceFile="MainWindow.java" interface="false" size="116" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainWindow$1" sourceFile="MainWindow.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainWindow$2" sourceFile="MainWindow.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainWindow$3" sourceFile="MainWindow.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainWindow$EnablerDisabler" sourceFile="MainWindow.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainWindow$FeederSelectionCombo" sourceFile="MainWindow.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.MainWindow$IPFeederSelectionListener" sourceFile="MainWindow.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.PreferencesDialog" sourceFile="PreferencesDialog.java" interface="false" size="297" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.PreferencesDialog$1" sourceFile="PreferencesDialog.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.PreferencesDialog$2" sourceFile="PreferencesDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.PreferencesDialog$3" sourceFile="PreferencesDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.PreferencesDialog$CheckButtonListener" sourceFile="PreferencesDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.PreferencesDialog$PortsTextValidationListener" sourceFile="PreferencesDialog.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.PreferencesDialogTest" sourceFile="PreferencesDialogTest.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.ResultTable" sourceFile="ResultTable.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.ResultTable$1" sourceFile="ResultTable.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.ResultTable$SetDataListener" sourceFile="ResultTable.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.SWTAwareStateMachine" sourceFile="SWTAwareStateMachine.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.SWTAwareStateMachine$1" sourceFile="SWTAwareStateMachine.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.SWTTestCase" sourceFile="SWTTestCase.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.SWTTestCase$1" sourceFile="SWTTestCase.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.SelectFetchersDialog" sourceFile="SelectFetchersDialog.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.SelectFetchersDialog$1" sourceFile="SelectFetchersDialog.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.SelectFetchersDialog$2" sourceFile="SelectFetchersDialog.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.SelectFetchersDialog$AddRemoveButtonListener" sourceFile="SelectFetchersDialog.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.SelectFetchersDialog$PrefsListener" sourceFile="SelectFetchersDialog.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.SelectFetchersDialogTest" sourceFile="SelectFetchersDialogTest.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.StatisticsDialog" sourceFile="StatisticsDialog.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.StatisticsDialogTest" sourceFile="StatisticsDialogTest.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.StatisticsDialogTest$1" sourceFile="StatisticsDialogTest.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.StatusBar" sourceFile="StatusBar.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.StatusBar$DisplayModeChangeListener" sourceFile="StatusBar.java" interface="false" size="26" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.gui.actions" total_bugs="5" total_types="74" total_size="1246" priority_2="3" priority_1="2">
+      <ClassStats class="net.azib.ipscan.gui.actions.BrowserLauncher" sourceFile="BrowserLauncher.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ColumnsActions" sourceFile="ColumnsActions.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ColumnsActions$AboutFetcher" sourceFile="ColumnsActions.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ColumnsActions$ColumnClick" sourceFile="ColumnsActions.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ColumnsActions$ColumnResize" sourceFile="ColumnsActions.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ColumnsActions$FetcherPreferences" sourceFile="ColumnsActions.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ColumnsActions$SortBy" sourceFile="ColumnsActions.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.CommandsMenuActions" sourceFile="CommandsMenuActions.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.CommandsMenuActions$CopyIP" sourceFile="CommandsMenuActions.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.CommandsMenuActions$CopyIPDetails" sourceFile="CommandsMenuActions.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.CommandsMenuActions$Delete" sourceFile="CommandsMenuActions.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.CommandsMenuActions$Details" sourceFile="CommandsMenuActions.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.CommandsMenuActions$EditOpeners" sourceFile="CommandsMenuActions.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.CommandsMenuActions$Rescan" sourceFile="CommandsMenuActions.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.CommandsMenuActions$SelectOpener" sourceFile="CommandsMenuActions.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.CommandsMenuActions$ShowOpenersMenu" sourceFile="CommandsMenuActions.java" interface="false" size="24" bugs="1" priority_2="1"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.FavoritesMenuActions" sourceFile="FavoritesMenuActions.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.FavoritesMenuActions$Add" sourceFile="FavoritesMenuActions.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.FavoritesMenuActions$Edit" sourceFile="FavoritesMenuActions.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.FavoritesMenuActions$Select" sourceFile="FavoritesMenuActions.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.FavoritesMenuActions$ShowMenu" sourceFile="FavoritesMenuActions.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.FeederActions" sourceFile="FeederActions.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.FeederActions$HostnameButton" sourceFile="FeederActions.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.FeederActions$HostnameButton$1" sourceFile="FeederActions.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoActionsTest" sourceFile="GotoActionsTest.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoMenuActions" sourceFile="GotoMenuActions.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoMenuActions$Find" sourceFile="GotoMenuActions.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoMenuActions$NextAliveHost" sourceFile="GotoMenuActions.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoMenuActions$NextDeadHost" sourceFile="GotoMenuActions.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoMenuActions$NextHost" sourceFile="GotoMenuActions.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoMenuActions$NextHostWithInfo" sourceFile="GotoMenuActions.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoMenuActions$PrevAliveHost" sourceFile="GotoMenuActions.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoMenuActions$PrevDeadHost" sourceFile="GotoMenuActions.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoMenuActions$PrevHost" sourceFile="GotoMenuActions.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.GotoMenuActions$PrevHostWithInfo" sourceFile="GotoMenuActions.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.HelpMenuActions" sourceFile="HelpMenuActions.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.HelpMenuActions$About" sourceFile="HelpMenuActions.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion" sourceFile="HelpMenuActions.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1" sourceFile="HelpMenuActions.java" interface="false" size="34" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.HelpMenuActions$CheckVersion$1$1" sourceFile="HelpMenuActions.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.HelpMenuActions$CommandLineUsage" sourceFile="HelpMenuActions.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.HelpMenuActions$FAQ" sourceFile="HelpMenuActions.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.HelpMenuActions$GettingStarted" sourceFile="HelpMenuActions.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.HelpMenuActions$Plugins" sourceFile="HelpMenuActions.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.HelpMenuActions$Website" sourceFile="HelpMenuActions.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.OpenerLauncher" sourceFile="OpenerLauncher.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.OpenerLauncherTest" sourceFile="OpenerLauncherTest.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ScanMenuActions" sourceFile="ScanMenuActions.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ScanMenuActions$NewWindow" sourceFile="ScanMenuActions.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ScanMenuActions$NewWindow$1" sourceFile="ScanMenuActions.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ScanMenuActions$Quit" sourceFile="ScanMenuActions.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ScanMenuActions$SaveAll" sourceFile="ScanMenuActions.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ScanMenuActions$SaveResults" sourceFile="ScanMenuActions.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ScanMenuActions$SaveResults$1" sourceFile="ScanMenuActions.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ScanMenuActions$SaveSelection" sourceFile="ScanMenuActions.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.StartStopScanningAction" sourceFile="StartStopScanningAction.java" interface="false" size="122" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.StartStopScanningAction$1" sourceFile="StartStopScanningAction.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.StartStopScanningAction$2" sourceFile="StartStopScanningAction.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.StartStopScanningAction$3" sourceFile="StartStopScanningAction.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.StartStopScanningAction$4" sourceFile="StartStopScanningAction.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.StartStopScanningActionTest" sourceFile="StartStopScanningActionTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.TerminalLauncher" sourceFile="TerminalLauncher.java" interface="false" size="50" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions" sourceFile="ToolsActions.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$ChooseFetchers" sourceFile="ToolsActions.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$Preferences" sourceFile="ToolsActions.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$ScanStatistics" sourceFile="ToolsActions.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$SelectAlive" sourceFile="ToolsActions.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$SelectAll" sourceFile="ToolsActions.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$SelectDead" sourceFile="ToolsActions.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$SelectDesired" sourceFile="ToolsActions.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$SelectInvert" sourceFile="ToolsActions.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$SelectWithPorts" sourceFile="ToolsActions.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$SelectWithoutPorts" sourceFile="ToolsActions.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.actions.ToolsActions$TableSelection" sourceFile="ToolsActions.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.gui.feeders" total_bugs="0" total_types="17" total_size="467">
+      <ClassStats class="net.azib.ipscan.gui.feeders.AbstractFeederGUI" sourceFile="AbstractFeederGUI.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.AbstractFeederGUI$1" sourceFile="AbstractFeederGUI.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.AbstractFeederGUI$1$1" sourceFile="AbstractFeederGUI.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.AbstractFeederGUITest" sourceFile="AbstractFeederGUITest.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.AbstractFeederGUITest$1" sourceFile="AbstractFeederGUITest.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.FeederGUIRegistry" sourceFile="FeederGUIRegistry.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.FeederGUIRegistryTest" sourceFile="FeederGUIRegistryTest.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.FileFeederGUI" sourceFile="FileFeederGUI.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.FileFeederGUI$1" sourceFile="FileFeederGUI.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.RandomFeederGUI" sourceFile="RandomFeederGUI.java" interface="false" size="78" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.RandomFeederGUI$1" sourceFile="RandomFeederGUI.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.RangeFeederGUI" sourceFile="RangeFeederGUI.java" interface="false" size="91" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.RangeFeederGUI$1" sourceFile="RangeFeederGUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.RangeFeederGUI$EndIPKeyListener" sourceFile="RangeFeederGUI.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.RangeFeederGUI$NetmaskListener" sourceFile="RangeFeederGUI.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.RangeFeederGUI$NetmaskResetListener" sourceFile="RangeFeederGUI.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.feeders.RangeFeederGUI$StartIPModifyListener" sourceFile="RangeFeederGUI.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.gui.fetchers" total_bugs="0" total_types="5" total_size="104">
+      <ClassStats class="net.azib.ipscan.gui.fetchers.PingFetcherPrefs" sourceFile="PingFetcherPrefs.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.fetchers.PortTextFetcherPrefs" sourceFile="PortTextFetcherPrefs.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.fetchers.PortTextFetcherPrefs$1" sourceFile="PortTextFetcherPrefs.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.fetchers.PortTextFetcherPrefs$2" sourceFile="PortTextFetcherPrefs.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.gui.fetchers.PortsFetcherPrefs" sourceFile="PortsFetcherPrefs.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.gui.util" total_bugs="0" total_types="1" total_size="18">
+      <ClassStats class="net.azib.ipscan.gui.util.LayoutHelper" sourceFile="LayoutHelper.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.azib.ipscan.util" total_bugs="0" total_types="6" total_size="237">
+      <ClassStats class="net.azib.ipscan.util.IOUtils" sourceFile="IOUtils.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.util.InetAddressUtils" sourceFile="InetAddressUtils.java" interface="false" size="75" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.util.InetAddressUtilsTest" sourceFile="InetAddressUtilsTest.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.util.SequenceIterator" sourceFile="SequenceIterator.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.util.SequenceIteratorTest" sourceFile="SequenceIteratorTest.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="net.azib.ipscan.util.ThreadResourceBinder" sourceFile="ThreadResourceBinder.java" interface="false" size="21" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.savarese.rocksaw.net" total_bugs="0" total_types="3" total_size="199">
+      <ClassStats class="org.savarese.rocksaw.net.RawSocket" sourceFile="RawSocket.java" interface="false" size="175" bugs="0"/>
+      <ClassStats class="org.savarese.rocksaw.net.RawSocket$1" sourceFile="RawSocket.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.savarese.rocksaw.net.RawSocket$TimeVal" sourceFile="RawSocket.java" interface="false" size="17" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.savarese.vserv.tcpip" total_bugs="1" total_types="6" total_size="571" priority_2="1">
+      <ClassStats class="org.savarese.vserv.tcpip.ICMPEchoPacket" sourceFile="ICMPEchoPacket.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.savarese.vserv.tcpip.ICMPPacket" sourceFile="ICMPPacket.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="org.savarese.vserv.tcpip.IPPacket" sourceFile="IPPacket.java" interface="false" size="153" bugs="1" priority_2="1"/>
+      <ClassStats class="org.savarese.vserv.tcpip.OctetConverter" sourceFile="OctetConverter.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="org.savarese.vserv.tcpip.TCPPacket" sourceFile="TCPPacket.java" interface="false" size="173" bugs="0"/>
+      <ClassStats class="org.savarese.vserv.tcpip.UDPPacket" sourceFile="UDPPacket.java" interface="false" size="89" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="rocksaw.src.java.org.savarese.rocksaw.net" total_bugs="0" total_types="3" total_size="199">
+      <ClassStats class="rocksaw.src.java.org.savarese.rocksaw.net.RawSocket" sourceFile="RawSocket.java" interface="false" size="175" bugs="0"/>
+      <ClassStats class="rocksaw.src.java.org.savarese.rocksaw.net.RawSocket$1" sourceFile="RawSocket.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rocksaw.src.java.org.savarese.rocksaw.net.RawSocket$TimeVal" sourceFile="RawSocket.java" interface="false" size="17" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="728" invocations="1745" avgMicrosecondsPerInvocation="417" maxMicrosecondsPerInvocation="329283" standardDeviationMircosecondsPerInvocation="8008"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="458" invocations="373" avgMicrosecondsPerInvocation="1228" maxMicrosecondsPerInvocation="405937" standardDeviationMircosecondsPerInvocation="20983"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="411" invocations="1656" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="54398" standardDeviationMircosecondsPerInvocation="1599"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="383" invocations="2" avgMicrosecondsPerInvocation="191584" maxMicrosecondsPerInvocation="261772" standardDeviationMircosecondsPerInvocation="70187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="349" invocations="1667" avgMicrosecondsPerInvocation="209" maxMicrosecondsPerInvocation="34994" standardDeviationMircosecondsPerInvocation="1004"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="348" invocations="1929" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="28589" standardDeviationMircosecondsPerInvocation="816"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="348" invocations="1669" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="7649" standardDeviationMircosecondsPerInvocation="471"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="348" invocations="753" avgMicrosecondsPerInvocation="462" maxMicrosecondsPerInvocation="38161" standardDeviationMircosecondsPerInvocation="1706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="340" invocations="3383" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="17717" standardDeviationMircosecondsPerInvocation="396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="332" invocations="1790" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="11100" standardDeviationMircosecondsPerInvocation="493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="222" invocations="1669" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="22747" standardDeviationMircosecondsPerInvocation="643"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="209" invocations="1337" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="8681" standardDeviationMircosecondsPerInvocation="407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="168" invocations="1934" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="24421" standardDeviationMircosecondsPerInvocation="622"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="163" invocations="373" avgMicrosecondsPerInvocation="437" maxMicrosecondsPerInvocation="35621" standardDeviationMircosecondsPerInvocation="1981"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="104" invocations="753" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="40841" standardDeviationMircosecondsPerInvocation="1527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="90" invocations="1758" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="31245" standardDeviationMircosecondsPerInvocation="756"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="87" invocations="373" avgMicrosecondsPerInvocation="233" maxMicrosecondsPerInvocation="45995" standardDeviationMircosecondsPerInvocation="2376"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="85" invocations="819" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="2797" standardDeviationMircosecondsPerInvocation="165"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="82" invocations="1669" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="7255" standardDeviationMircosecondsPerInvocation="254"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="68" invocations="373" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="13340" standardDeviationMircosecondsPerInvocation="715"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="68" invocations="43659" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="4328" standardDeviationMircosecondsPerInvocation="25"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="66" invocations="28006" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="4345" standardDeviationMircosecondsPerInvocation="41"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue" totalMilliseconds="64" invocations="373" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="22629" standardDeviationMircosecondsPerInvocation="1195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="64" invocations="373" avgMicrosecondsPerInvocation="173" maxMicrosecondsPerInvocation="32382" standardDeviationMircosecondsPerInvocation="1674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="63" invocations="373" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="2168" standardDeviationMircosecondsPerInvocation="278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="59" invocations="752" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="1731" standardDeviationMircosecondsPerInvocation="153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="56" invocations="373" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="8083" standardDeviationMircosecondsPerInvocation="501"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="55" invocations="373" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="1626" standardDeviationMircosecondsPerInvocation="180"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="53" invocations="373" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="30863" standardDeviationMircosecondsPerInvocation="1600"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="51" invocations="753" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="2297" standardDeviationMircosecondsPerInvocation="136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="51" invocations="373" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="1787" standardDeviationMircosecondsPerInvocation="172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="51" invocations="373" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="3758" standardDeviationMircosecondsPerInvocation="256"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="50" invocations="1656" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="1807" standardDeviationMircosecondsPerInvocation="79"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="49" invocations="373" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="2598" standardDeviationMircosecondsPerInvocation="206"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="45" invocations="752" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="1763" standardDeviationMircosecondsPerInvocation="130"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="44" invocations="373" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="1078" standardDeviationMircosecondsPerInvocation="143"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1396803033767" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
